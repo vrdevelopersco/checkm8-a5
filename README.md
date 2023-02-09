@@ -1,4 +1,4 @@
-# A5/A5X checkm8
+# A5/A5X checkm8 (Spanish translated version) plus a little longer explanation about SoC --> models
 
 [checkm8](https://github.com/axi0mX/ipwndfu/blob/master/checkm8.py) port for S5L8940X/S5L8942X/S5L8945X based on Arduino and MAX3421E-based USB Host Shield
 
@@ -21,8 +21,12 @@ git apply path/to/usb_host_library.patch
 Before using the exploit change this line in the beginning of `checkm8-a5.ino` with target SoC CPID:
 
 ```
-#define A5_8942
+#define A5_8940 (iPad mini)
+#define A5_8942 (iPad 2)
+#define A5_8945 (iPad 3)
 ```
+
+since I don't have right now iPhone equipment, cannot tell what model it is. HINT: With appletech752's Sliver you can know about models, too
 
 ## S5L8940X/S5L8942X/S5L8945X-specific exploitation notes
 
